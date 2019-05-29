@@ -1,0 +1,9 @@
+.clearfix:after {
+    content: "";
+    display: blcok;
+    clear: both;
+}
+
+button {
+    @include border-radius;
+}
