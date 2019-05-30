@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app"> 
+    <AppHeader></AppHeader>
     <router-view></router-view>
-    <Tabbar></Tabbar>
+   
   </div>
 </template>
 
@@ -9,10 +10,10 @@
 
 </style>
 <script>
-import Tabbar from "@/components/Tabbar"
+import AppHeader from "@/components/Header"
 export default {
   components:{
-    Tabbar,
+    AppHeader
   }
 }
 </script>

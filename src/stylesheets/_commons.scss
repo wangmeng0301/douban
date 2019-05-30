@@ -4,6 +4,13 @@
     clear: both;
 }
 
+.pd60{
+    padding-top:60px;
+}
+.loading{
+    background:url(../assets/loading.gif) no-repeat center;
+    height:2.4rem;
+}
 button {
     @include border-radius;
 }
