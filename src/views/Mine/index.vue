@@ -1,17 +1,19 @@
 <template>
-    <div class="home">
-        Mine
-        <Tabbar></Tabbar>
-    </div>
+  <div class="home">
+    Mine
+    <div style="height:1500px;"></div>
+    <Tabbar></Tabbar>
+  </div>
 </template>
 <script>
-import Tabbar from "@/components/Tabbar"
+import Tabbar from "@/components/Tabbar";
 export default {
-    components:{
-        Tabbar
-    }
-}
+
+  components: {
+    Tabbar
+  },
+ 
+};
 </script>
 <style>
-
 </style>
