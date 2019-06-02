@@ -33,8 +33,8 @@ module.exports = {
         https: false,
         hotOnly: false,
         proxy: { //http://47.96.0.211:9000     /api/db/in_theaters     
-            "/api":{
-                target:"http://47.96.0.211:9000",
+            "/api":{//http://118.31.110.6:5559  /sk/home/list?page=4&limit=3
+                target:"http://118.31.110.6:5559",
                 changeOrigin:true,//是否改变域名
                 pathRewrite:{
                     "^/api":""

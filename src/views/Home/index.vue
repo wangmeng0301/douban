@@ -9,6 +9,7 @@
         :key="nav.id"
         :class="{'active':type===nav.type}"
         @click="type=nav.type"
+        :type="type"
       >{{nav.title}}</span>
     </div>
     <div class="moviebox" :class="{fixedBox:isFixed}">
@@ -28,12 +29,12 @@ export default {
   name: "home",
   data() {
     return {
-      type: "in_theaters",
+      type: "nav",
       isFixed: false,
       homeTop:0,
       navs: [
-        { id: 1, title: "正在热映", type: "in_theaters" },
-        { id: 2, title: "即将上映", type: "coming_soon" }
+        { id: 1, title: "正在热映", type: "nav" },
+        { id: 2, title: "即将上映", type: "home/list" }
       ]
     };
   },

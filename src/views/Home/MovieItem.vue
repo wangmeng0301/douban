@@ -1,25 +1,27 @@
 <template>
     <div class="movieItem">
         <div class="img-box">
-            <img width="100%" v-lazy="getImages(movie.images.small)" alt="">
+            <img v-lazy="getImages(movie.cover)" alt="">
         </div>
-        <div class="info">
+        <div class="info" >
             <div class="info-left">
-                <div class="title">{{movie.title}}</div>
-                <div class="count">{{movie.collect_count | filterData}}</div>
+                <div class="title">电影：{{movie.title}}</div>
+                <div class="count">想看的人：{{movie.cover_y | filterData}}</div>
             </div>
             <div class="info-right">
-                <div class="director">{{movie.directors[0].name}}</div>
-                <div class="rating">{{movie.rating.average}}分</div>
+                
+                <div class="rating">电影评分：{{movie.rate}}分</div>
             </div>
         </div>
+       
     </div>
 </template>
 <script>
 export default {
-    props:{
-        movie:Object
-    },
+    props:
+        {movie:Object},
+        
+    
      methods:{
          getImages( _url ){
             if( _url !== undefined ){
@@ -40,11 +42,14 @@ export default {
 </script>
 <style lang="scss" scoped>
     .movieItem{
+        display:flex;
         margin:14px;
         background:#fff;
+        width:100%;
+       height:1.4rem;
         .img-box{
-            width:1005;
-            height:2.4rem;
+            width:30%;
+            height:100%;
             img{
                 width:100%;
                 height:100%;
@@ -52,20 +57,21 @@ export default {
         }
         .info{
             display:flex;
-            justify-content:space-between;
+            flex-direction: column;
             padding:.1rem .2rem;
+            line-height:.30rem;
             .title{
                 font-size:18px;
                 font-weight: bold;
                 color:rgb(247, 79, 28);
-                padding-bottom:4px;
+                
             }
             .rating{
                 padding-top:4px;
                 color:orange;
                 font-size:13px;
                 font-weight: bold;
-                text-align: center;
+
             }
         }
     }

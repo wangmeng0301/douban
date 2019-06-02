@@ -63,17 +63,18 @@ export default {
         iconClass: "fa fa-cog fa-spin"
       });
       this.$http
-        .get("/api/db/" + this.type, {
+        .get("/api/sk/" + this.type, {
           params: {
             limit,
             page
           }
         })
         .then(res => {
-          this.movies = this.movies.concat(res.data.object_list);
+          console.log(res)
+           this.movies = this.movies.concat(res.data.data.object_list);
           instance.close(); //关闭加载提示框
           this.loading = false;
-          if (this.limit * this.page >= res.data.total) {
+          if (this.limit * this.page >= res.data.data.total) {
             //判断是否由更多数据
             this.hasMore = false; //没有更多数据
             return false;
