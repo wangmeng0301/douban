@@ -42,7 +42,7 @@ export default {
     height: 40px;
   }
   .active{
-    color:#199a08;
+    color:#ec790e;
   }
 }
 </style>
