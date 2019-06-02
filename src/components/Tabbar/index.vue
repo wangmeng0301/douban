@@ -40,11 +40,11 @@ export default {
     return {
       selected: this.$route.name,
       footers: [
-        {id:1,txt:"首页",mark:"home",normalImg:require("../../assets/ic_tab_home_normal.png"),activeImg:require("../../assets/ic_tab_home_active.png")},
-        {id:2,txt:"书影音",mark:"audio",normalImg:require("../../assets/ic_tab_audio_normal.png"),activeImg:require("../../assets/ic_tab_audio_active.png")},
-        {id:3,txt:"广播",mark:"broadcast",normalImg:require("../../assets/ic_tab_broadcast_normal.png"),activeImg:require("../../assets/ic_tab_broadcast_active.png")},
-        {id:4,txt:"分组",mark:"group",normalImg:require("../../assets/ic_tab_group_normal.png"),activeImg:require("../../assets/ic_tab_group_active.png")},
-        {id:5,txt:"我的",mark:"mine",normalImg:require("../../assets/ic_tab_mine_normal.png"),activeImg:require("../../assets/ic_tab_mine_active.png")}
+        {id:1,txt:"电影",mark:"home",normalImg:require("../../assets/ic_tab_home_normal.png"),activeImg:require("../../assets/ic_tab_home_active.png")},
+        {id:2,txt:"影院",mark:"audio",normalImg:require("../../assets/ic_tab_audio_normal.png"),activeImg:require("../../assets/ic_tab_audio_active.png")},
+        {id:3,txt:"特惠",mark:"broadcast",normalImg:require("../../assets/ic_tab_broadcast_normal.png"),activeImg:require("../../assets/ic_tab_broadcast_active.png")},
+        {id:4,txt:"我的",mark:"group",normalImg:require("../../assets/ic_tab_group_normal.png"),activeImg:require("../../assets/ic_tab_group_active.png")},
+        /* {id:5,txt:"我的",mark:"mine",normalImg:require("../../assets/ic_tab_mine_normal.png"),activeImg:require("../../assets/ic_tab_mine_active.png")} */
       ]
     };
   },
