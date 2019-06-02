@@ -1,7 +1,7 @@
 <template>
     <div class="movieItem">
         <div class="img-box">
-            <img width="100%" :src="getImages(movie.images.small)" alt="">
+            <img width="100%" v-lazy="getImages(movie.images.small)" alt="">
         </div>
         <div class="info">
             <div class="info-left">
