@@ -26,22 +26,22 @@ export default {
       switch (to.name) {
         case "home":
           this.icon = "home";
-          this.title = "豆瓣首页";
+          this.title = "电影";
           this.isShow = true;
           break;
         case "audio":
           this.icon = "audio-description";
-          this.title = "豆瓣影音";
+          this.title = "影院";
           this.isShow = true;
           break;
         case "broadcast":
           this.icon = "volume-up";
-          this.title = "豆瓣广播";
+          this.title = "特惠";
           this.isShow = true;
           break;
         case "group":
           this.icon = "group";
-          this.title = "豆瓣分组";
+          this.title = "我的";
           this.isShow = true;
           break;
         case "mine":
@@ -66,7 +66,7 @@ export default {
   width: 3.75rem;
   height: 0.5rem;
   line-height: 0.5rem;
-  background: rgba(4, 168, 45, 0.8);
+  background: rgba(243, 145, 33, 0.8);
   color: #fff;
   justify-content: space-between;
   padding: 0 0.2rem;
