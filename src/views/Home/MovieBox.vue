@@ -71,7 +71,8 @@ export default {
         })
         .then(res => {
           console.log(res)
-           this.movies = this.movies.concat(res.data.data.object_list);
+          // this.movies = this.movies.concat(res.data.data.object_list);
+          this.movies = res.data.data.object_list
           instance.close(); //关闭加载提示框
           this.loading = false;
           if (this.limit * this.page >= res.data.data.total) {
