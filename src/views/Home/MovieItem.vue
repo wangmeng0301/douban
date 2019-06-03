@@ -1,5 +1,9 @@
 <template>
-    <div class="movieItem">
+    <router-link 
+    class="movieItem"
+    tag="div"
+    :to="{name:'moviedetail',params:{id:movie.id}}"
+    >
         <div class="img-box">
             <img width="100%" v-lazy="getImages(movie.images.small)" alt="">
         </div>
@@ -13,7 +17,7 @@
                 <div class="rating">{{movie.rating.average}}分</div>
             </div>
         </div>
-    </div>
+    </router-link>
 </template>
 <script>
 export default {

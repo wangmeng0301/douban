@@ -44,7 +44,7 @@ export default {
         {id:2,txt:"影院",mark:"audio",normalImg:require("../../assets/ic_tab_audio_normal.png"),activeImg:require("../../assets/ic_tab_audio_active.png")},
         {id:3,txt:"特惠",mark:"broadcast",normalImg:require("../../assets/ic_tab_broadcast_normal.png"),activeImg:require("../../assets/ic_tab_broadcast_active.png")},
         {id:4,txt:"我的",mark:"group",normalImg:require("../../assets/ic_tab_group_normal.png"),activeImg:require("../../assets/ic_tab_group_active.png")},
-        /* {id:5,txt:"我的",mark:"mine",normalImg:require("../../assets/ic_tab_mine_normal.png"),activeImg:require("../../assets/ic_tab_mine_active.png")} */
+        {id:5,txt:"我的",mark:"mine",normalImg:require("../../assets/ic_tab_mine_normal.png"),activeImg:require("../../assets/ic_tab_mine_active.png")}
       ]
     };
   },

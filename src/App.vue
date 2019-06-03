@@ -14,6 +14,12 @@ import AppHeader from "@/components/Header";
 export default {
   components: {
     AppHeader
+  },
+  created(){
+
+    this.$router.push("/")
+    //初始化购物车
+    this.$store.dispatch("initCar")
   }
 };
 </script>
